@@ -98,11 +98,11 @@ L'architecture vise la **séparation des responsabilités** et la **facilité d'
 
 ## Structure des fichiers / classes principales
 
-* `CellInterface`, `Cell` — représentation d'une cellule.
-* `Grid` (interface) — contrat pour la grille.
-* `FixedGrid` — implémentation 5×5 (réinitialisation, comptage voisins, génération suivante).
-* `RuleSet`, `StandardConwayRuleSet` — règles du jeu.
-* `Initializer`, `UserInputInitializer`, `RandomInitializer` — stratégies d'initialisation.
-* `Renderer`, `ConsoleRenderer` — affichage.
-* `GameController` — boucle de simulation.
-* `GameOfLife` (`Main`) — point d'entrée, lecture interactive et orchestration.
+* `CellInterface`, `Cell` : représentation d'une cellule.
+* `Grid` (interface) : contrat pour la grille.
+* `FixedGrid` : implémentation 5×5 (réinitialisation, comptage voisins, génération suivante).
+* `RuleSet`, `StandardConwayRuleSet` : règles du jeu.
+* `Initializer`, `UserInputInitializer`, `RandomInitializer` : stratégies d'initialisation.
+* `Renderer`, `ConsoleRenderer` : affichage.
+* `GameController` : boucle de simulation.
+* `GameOfLife` (`Main`) : point d'entrée, lecture interactive et orchestration.
