@@ -21,8 +21,8 @@ Auteur : **Franck Sean**
 
 Ce projet est une implémentation console du **Jeu de la Vie** (Conway) adaptée à une grille fixe 5×5. L'objectif est d'avoir une version claire, modulaire et testable, permettant :
 
-* initialisation manuelle ou automatique (planeur, aléatoire) ;
-* simulation pas à pas avec affichage ASCII dans la console ;
+* initialisation manuelle ou automatique (aléatoire) ;
+* simulation pas à pas avec affichage dans la console ;
 * architecture séparant clairement stockage, règles, initialisation et rendu.
 
 ---
