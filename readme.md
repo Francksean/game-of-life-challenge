@@ -5,8 +5,7 @@
 * [Présentation](#présentation)
 * [Installation et exécution](#installation-et-exécution)
 
-    * [Compilation (avec package `org.example`)](#compilation-avec-package-orgexample)
-    * [Exécution rapide (tous les fichiers dans le même dossier, sans package)](#exécution-rapide-tous-les-fichiers-dans-le-même-dossier-sans-package)
+    * [Compilation (avec package `org.example` dans `src/main/java`)](#compilation-avec-package-orgexample)
 * [Utilisation](#utilisation)
 
     * [Options d'initialisation](#options-dinitialisation)
@@ -42,16 +41,6 @@ mvn install
 ```
 Cela générera le fichier `.jar` dans le repertoire `target`.
 
-Le programme est intéractif : il demande une option d'initialisation (manuelle ou aléatoire) puis la probabilité si vous choisissez l'initialisation aléatoire (si vous avez ajouté cette option) puis le nombre de générations à simuler.
-
-### Exécution rapide (tous les fichiers dans le même dossier, sans package)
-
-Si vous préférez, vous pouvez retirer la ligne `package org.example;` de chaque fichier, placer tous les fichiers `.java` dans le même dossier et :
-
-```bash
-javac *.java
-java GameOfLife
-```
 
 ---
 
@@ -59,6 +48,7 @@ java GameOfLife
 
 ### Options d'initialisation
 
+Le programme est intéractif : il demande une option d'initialisation (manuelle ou aléatoire) puis la probabilité si vous choisissez l'initialisation aléatoire (si vous avez ajouté cette option) puis le nombre de générations à simuler.
 * **Manuelle** : entrez `size` lignes (ici 5) contenant `X` pour cellule vivante ou `.` pour cellule morte. Exemple pour 5×5 :
 
   ```
